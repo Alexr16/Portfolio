@@ -150,9 +150,12 @@ p {
   .headline-icons {
     order: 1;
     align-self: flex-start;
-    margin: 12px 0;
-    padding-left: 3rem;
-    padding-right: 5em;
+    margin-bottom: -10rem;
+    margin-top: -3em;
+  }
+
+  .icons {
+    display: flex;
   }
 
   .headline-description {
