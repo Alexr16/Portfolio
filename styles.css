@@ -1,6 +1,13 @@
 body { font-family: 'Inter', sans-serif; background-color: black; margin: 0; }
-.nav-bar a { color: #ffffff; text-decoration: none; text-align: center; padding: 20px 5px; display: inline-block; width: 100%; }
-.nav-bar a:hover { color: gray; }
+.nav-bar, a { 
+    color: #ffffff;
+    text-decoration: none; 
+    text-align: center; 
+    padding: 20px 5px; 
+    display: inline-block; 
+    width: 100%; 
+}
+.nav-bar, a:hover { color: gray; }
 .nav-bar {
     display: flex;
     background-color: #3e3c3c;
