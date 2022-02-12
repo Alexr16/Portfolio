@@ -436,9 +436,7 @@ hr {
 
   .headline-img {
     width: 60%;
-    margin: auto;
     position: relative;
-    left: 190px;
     top: 160px;
   }
 
@@ -506,7 +504,9 @@ hr {
     order: 2;
     max-width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-top: -10rem;
     padding-bottom: 10rem;
   }
