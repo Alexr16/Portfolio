@@ -87,7 +87,6 @@ a:hover { color: gray; }
 .headline-description {
   flex: 2;
   padding-left: 3rem;
-  padding-right: 12rem;
   height: auto;
 }
 
@@ -104,12 +103,12 @@ h1 {
   color: #f55800;
 }
 
-.works {
-  background-color: #e5e5e5;
-  padding: 2rem 10rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+h2 {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 81px;
+  color: #f55800;
 }
 
 h3 {
@@ -121,9 +120,44 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.works {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 5rem 10rem;
+}
+
 .header-content {
   text-align: left;
   margin: 0;
+}
+
+.work-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 52px;
+  color: #091e42;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex: 2;
 }
 
 p {
@@ -131,18 +165,6 @@ p {
   font-size: 20px;
   line-height: 32px;
   color: #f4f5f7;
-}
-
-.work-title {
-  font-family: "Crete Round", serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
-  color: #091e42;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  flex: 1;
 }
 
 .work-line-title {
@@ -154,7 +176,6 @@ p {
 
 .works-title {
   align-items: center;
-  padding-bottom: 2rem;
   display: flex;
 }
 
@@ -169,11 +190,12 @@ p {
 }
 
 .principal-image {
-  margin: auto;
+  flex: 2;
 }
 
 .content {
   padding: 0 2rem;
+  flex: 1;
 }
 
 .content p {
@@ -187,6 +209,13 @@ p {
   display: flex;
   align-items: center;
   padding-bottom: 2rem;
+}
+
+.tags-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  margin-left: -3rem;
 }
 
 .tag {
@@ -211,7 +240,15 @@ p {
 }
 
 .button:hover {
-  background-color: #e97f42;
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.img1 {
+  width: 100%;
+  margin: auto;
 }
 
 .project-cards {
@@ -227,18 +264,21 @@ p {
   margin: 0 2rem 2rem 0;
   display: flex;
   align-items: flex-end;
-  width: 369px;
-  height: 435px;
-  padding: 2rem 1.5rem;
+  width: auto;
+  padding: 2rem 0;
   justify-content: center;
+}
+
+.tags-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  margin-left: -3rem;
 }
 
 .card-content-first {
   margin: -2rem -1.5rem;
-}
-
-.button-first-card {
-  padding: 0.5rem 10.15rem;
+  width: 100%;
 }
 
 .first-card .button {
@@ -246,57 +286,52 @@ p {
 }
 
 .card2 {
-  background-image: linear-gradient(179.35deg, rgb(38 38 38 / 0.85%), rgb(38 38 38 / 0.84%)), url("images/project3.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
-  width: 369px;
-  height: 435px;
+  width: auto;
 }
 
 .card3 {
-  background-image: linear-gradient(179.35deg, rgb(38 38 38 / 0.85%), rgb(38 38 38 / 0.84%)), url("images/project4.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
-  width: 369px;
-  height: 435px;
+  width: auto;
 }
 
 .card4 {
-  background-image: linear-gradient(179.35deg, rgb(38 38 38 / 0.85%), rgb(38 38 38 / 0.84%)), url("images/project5.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.svg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
-  width: 369px;
-  height: 435px;
+  width: auto;
 }
 
 .card5 {
-  background-image: linear-gradient(179.35deg, rgb(38 38 38 / 0.85%), rgb(38 38 38 / 0.84%)), url("images/project3.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
-  width: 369px;
-  height: 435px;
+  width: auto;
 }
 
 .card6 {
-  background-image: linear-gradient(179.35deg, rgb(38 38 38 / 0.85%), rgb(38 38 38 / 0.84%)), url("images/project4.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
-  width: 369px;
-  height: 435px;
+  width: auto;
 }
 
 .card-info .tag {
-  background: rgb(255 255 255 / 24%);
+  background: rgba(255 255 255 / 0.24%);
   box-sizing: border-box;
   font-size: 15px;
   line-height: 20px;
@@ -311,16 +346,22 @@ p {
 }
 
 .about-info {
-  margin: auto;
-  padding: 0 10rem;
+  padding: 0 5rem;
+  width: 100%;
+  flex: 1;
+}
+
+.about-img {
+  width: 100%;
 }
 
 .about-paragraph {
   padding-bottom: 2rem;
 }
 
-.about-image {
+.about-image1 {
   margin: auto;
+  flex: 1;
 }
 
 .about-me {
@@ -337,7 +378,8 @@ hr {
 .skills-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10rem;
+  padding: 2rem;
+  width: 100%;
 }
 
 .headline-skills-rhombus {
@@ -372,20 +414,6 @@ hr {
   margin-bottom: 2rem;
 }
 
-h5 {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-}
-
-h4 {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-}
-
 .content-paragraph p {
   font-weight: normal;
   font-size: 17px;
@@ -406,10 +434,11 @@ h4 {
   }
 
   .headline-img {
-    width: 480px;
+    width: 60%;
     margin: auto;
     position: relative;
-    left: 215px;
+    left: 190px;
+    top: 160px;
   }
 
   .nav-bar .name {
@@ -455,7 +484,8 @@ h4 {
     padding-right: 5em;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
@@ -477,6 +507,7 @@ h4 {
     height: auto;
     display: block;
     margin-top: -10rem;
+    padding-bottom: 10rem;
   }
 
   .works-title {
@@ -496,13 +527,13 @@ h4 {
     padding-top: 4rem;
   }
 
-  .img1 {
-    width: 390px;
-    margin: auto;
-  }
-
   .project-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content {
+    padding: 0 2rem;
+    width: auto;
   }
 
   .first-card {
@@ -513,6 +544,12 @@ h4 {
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 1.3rem;
+  }
+
+  .first-card .button {
+    width: 100%;
+    margin: 0.7rem 0;
   }
 
   .card-info {
@@ -574,10 +611,6 @@ h4 {
     display: inherit;
   }
 
-  .button-first-card {
-    padding: 0.5rem 8.8rem;
-  }
-
   .button-display {
     display: block;
     width: 100%;
@@ -592,15 +625,16 @@ h4 {
   }
 
   .about-img {
-    width: 480px;
+    width: 70%;
     margin: auto;
-    position: relative;
+    position: sticky;
     left: 300px;
   }
 
   .about-info {
     margin: auto;
     padding: 0 2rem;
+    width: auto;
   }
 
   .skills-info {
