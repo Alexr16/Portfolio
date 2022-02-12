@@ -1,7 +1,8 @@
 body {
   font-family: Inter, sans-serif;
-  background-color: black;
+  background-color: #1c1a19;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .nav-bar,
@@ -67,6 +68,10 @@ a:hover { color: gray; }
 
 .menu { display: none; }
 
+.icons {
+  list-style: none;
+}
+
 .headline {
   display: flex;
   flex: 1;
@@ -83,7 +88,6 @@ a:hover { color: gray; }
 .headline-description {
   flex: 2;
   padding-left: 3rem;
-  padding-right: 12rem;
   height: auto;
 }
 
@@ -100,11 +104,61 @@ h1 {
   color: #f55800;
 }
 
+h2 {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 81px;
+  color: #f55800;
+}
+
+h3 {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+  text-align: center;
+}
+
 h4 {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.works {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 5rem 10rem;
+}
+
+.header-content {
+  text-align: left;
+  margin: 0;
+}
+
+.work-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 52px;
+  color: #091e42;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex: 2;
 }
 
 p {
@@ -114,12 +168,276 @@ p {
   color: #f4f5f7;
 }
 
+.work-line-title {
+  border: 1px solid #212121;
+  width: 90%;
+  margin: auto;
+  flex: 3;
+}
+
+.works-title {
+  align-items: center;
+  display: flex;
+}
+
+.class-works {
+  display: flex;
+}
+
+.initial-section {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.principal-image {
+  flex: 2;
+}
+
+.content {
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.content p {
+  color: #091e42;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.tags-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  margin-left: -3rem;
+}
+
+.tag {
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  color: #091e42;
+  margin: 5px;
+}
+
+.button {
+  background-color: #f55800;
+  color: #fff;
+  padding: 12px;
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+}
+
+.button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.img1 {
+  width: 100%;
+  margin: auto;
+}
+
+.project-cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem 0;
+}
+
+.first-card {
+  border: 2px solid #091e42;
+  background-image: url("images/project2.svg");
+  margin: 0 2rem 2rem 0;
+  display: flex;
+  align-items: flex-end;
+  width: auto;
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.tags-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  margin-left: -3rem;
+}
+
+.card-content-first {
+  margin: -2rem -1.5rem;
+  width: 100%;
+}
+
+.first-card .button {
+  width: 100%;
+}
+
+.card2 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+}
+
+.card3 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+}
+
+.card4 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+}
+
+.card5 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+}
+
+.card6 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+}
+
+.card-info .tag {
+  background: rgba(255 255 255 / 0.24%);
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  color: #fff;
+  margin: 5px;
+}
+
+.card-info {
+  display: flex;
+  align-items: end;
+}
+
+.about-info {
+  padding: 0 5rem;
+  width: 100%;
+  flex: 1;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-paragraph {
+  padding-bottom: 2rem;
+}
+
+.about-image1 {
+  margin: auto;
+  flex: 1;
+}
+
+.about-me {
+  display: flex;
+  padding-bottom: 10rem;
+  padding-top: 5rem;
+}
+
+hr {
+  border: 1px solid #fff;
+  width: 90%;
+}
+
+.skills-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  width: 100%;
+}
+
+.headline-skills-rhombus {
+  font-size: 32px;
+  line-height: 44px;
+  list-style-image: url("images/rhombus.svg");
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.headline-skills-square {
+  font-size: 32px;
+  line-height: 44px;
+  list-style-image: url("images/squad.svg");
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.headline-skills-circle {
+  font-size: 32px;
+  line-height: 44px;
+  list-style-image: url("images/circle.svg");
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  list-style: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 42.67px;
+  margin-bottom: 2rem;
+}
+
+.content-paragraph p {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.button-display {
+  display: none;
+}
+
 @media all and (max-width: 480px) {
   .menu {
     display: block;
     position: absolute;
     right: 10px;
     top: 15px;
+  }
+
+  .headline-img {
+    width: 60%;
+    position: relative;
+    top: 160px;
   }
 
   .nav-bar .name {
@@ -165,7 +483,8 @@ p {
     padding-right: 5em;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
@@ -185,7 +504,143 @@ p {
     order: 2;
     max-width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-top: -10rem;
+    padding-bottom: 10rem;
+  }
+
+  .works-title {
+    flex-direction: column;
+  }
+
+  .works {
+    padding: 1rem 1rem 5rem;
+  }
+
+  .initial-section {
+    flex-direction: column;
+  }
+
+  .principal-image {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+
+  .project-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content {
+    padding: 0 2rem;
+    width: auto;
+  }
+
+  .first-card {
+    width: 327px;
+    height: 386px;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.3rem;
+  }
+
+  .first-card .button {
+    width: 100%;
+    margin: 0.7rem 0;
+  }
+
+  .card-info {
+    padding-bottom: 1rem;
+  }
+
+  .card2 {
+    width: 327px;
+    height: 386px;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+
+  .card3 {
+    width: 327px;
+    height: 386px;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+
+  .card4 {
+    width: 327px;
+    height: 386px;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+
+  .card5 {
+    width: 327px;
+    height: 386px;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+
+  .card6 {
+    width: 327px;
+    height: 386px;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+
+  .button-display {
+    display: block;
+    width: 100%;
+  }
+
+  .card-button {
+    margin: -2rem -1.5rem;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 70%;
+    margin: auto;
+    position: sticky;
+    left: 300px;
+  }
+
+  .about-info {
+    margin: auto;
+    padding: 0 2rem;
+    width: auto;
+  }
+
+  .skills-info {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem 0;
+    text-align: center;
   }
 }
