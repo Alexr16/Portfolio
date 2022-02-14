@@ -213,13 +213,12 @@ p {
 }
 
 .tags-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   list-style: none;
   margin-left: -3rem;
 }
 
 .tag {
+  float: left;
   border: 1px solid #8993a4;
   box-sizing: border-box;
   font-size: 15px;
