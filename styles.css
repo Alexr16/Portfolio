@@ -755,5 +755,9 @@ footer {
   .names {
     display: none;
   }
+  .submit-button{
+    display: flex;
+    justify-content: center;
+  }
   
 }
