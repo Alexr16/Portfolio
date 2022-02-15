@@ -387,7 +387,8 @@ hr {
   line-height: 44px;
   list-style-image: url("images/rhombus.svg");
   list-style-position: inside;
-  margin-bottom: 1rem;
+  margin: 0.7rem 1.8rem 0.7rem 0.7rem;
+
 }
 
 .headline-skills-square {
@@ -395,7 +396,7 @@ hr {
   line-height: 44px;
   list-style-image: url("images/squad.svg");
   list-style-position: inside;
-  margin-bottom: 1rem;
+  margin: 0.7rem 1.8rem 0.7rem 0.7rem;
 }
 
 .headline-skills-circle {
@@ -403,7 +404,7 @@ hr {
   line-height: 44px;
   list-style-image: url("images/circle.svg");
   list-style-position: inside;
-  margin-bottom: 1rem;
+  margin: 0.7rem 1.8rem 0.7rem 0.7rem;
 }
 
 .skill-list {
@@ -423,6 +424,88 @@ hr {
 
 .button-display {
   display: none;
+}
+
+.portfolio-form {
+  display: flex;
+  background-color: #e5e5e5;
+  align-items: flex-start;
+  padding: 5rem 8rem;
+}
+
+.contact-form {
+  list-style: none;
+}
+
+footer {
+  background-color: #e5e5e5;
+  margin: 0;
+}
+
+.name-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.names {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  background-color: #e5e5e5;
+  border: none;
+  border-bottom: 1px solid #d8d8d7;
+}
+
+.email {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: #e5e5e5;
+  border: none;
+  border-bottom: 1px solid #d8d8d7;
+}
+
+.message {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  background-color: #f8f8f7;
+  width: 100%;
+  border: none;
+}
+
+.form-btn {
+  margin-top: 1rem;
+}
+
+.form-text p {
+  color: #262626;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.form-area {
+
+}
+
+.footer-line {
+  border: 1px solid #d8d8d7;
+  width: 100%;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
 }
 
 @media all and (max-width: 480px) {
@@ -640,6 +723,14 @@ hr {
   .skills-info {
     grid-template-columns: repeat(1, 1fr);
     padding: 5rem 0;
+    text-align: center;
+  }
+
+  .form-text p {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
     text-align: center;
   }
 }
