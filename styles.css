@@ -428,15 +428,20 @@ hr {
 
 .portfolio-form {
   display: flex;
-  background-color: #e5e5e5;
+  background-color: #fff;
   align-items: flex-start;
   padding: 5rem 8rem;
 }
 
 .contact-form {
   list-style: none;
+  padding-left:0 ;
+  padding-right: 24px ;
 }
 
+.form-area {
+  width: 100%;
+}
 footer {
   background-color: #e5e5e5;
   margin: 0;
@@ -449,25 +454,30 @@ footer {
   width: auto;
 }
 
-.names {
+.names, .full-name ,.email,.message {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: #979493;
-  background-color: #e5e5e5;
   border: none;
   border-bottom: 1px solid #d8d8d7;
+  font-family: "Inter", sans-serif;
+  padding: 14px 12px;
+}
+.full-name{
+  width: 100%;
+  display: none;
 }
 
 .email {
   font-weight: normal;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #979493;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
-  background-color: #e5e5e5;
   border: none;
   border-bottom: 1px solid #d8d8d7;
 }
@@ -479,6 +489,7 @@ footer {
   color: #3c3a39;
   background-color: #f8f8f7;
   width: 100%;
+  min-height: 114px;
   border: none;
 }
 
@@ -491,10 +502,11 @@ footer {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  padding: 0 8px;
 }
 
-.form-area {
-
+.message {
+ background-color: #fbfbfb;
 }
 
 .footer-line {
@@ -733,4 +745,15 @@ footer {
     line-height: 44px;
     text-align: center;
   }
+  .portfolio-form {
+    flex-direction: column;
+    padding: 80px 24px ;
+  }
+  .full-name{
+    display: unset;
+  }
+  .names {
+    display: none;
+  }
+  
 }
