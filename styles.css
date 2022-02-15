@@ -136,12 +136,12 @@ h5 {
 }
 
 .works {
-  background-color: #e5e5e5;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  padding: 5rem 10rem;
+  padding: 8rem;
 }
 
 .header-content {
@@ -267,6 +267,7 @@ p {
   width: auto;
   padding: 2rem 0;
   justify-content: center;
+  background-size: cover;
 }
 
 .tags-container2 {
@@ -292,6 +293,7 @@ p {
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-size: cover;
 }
 
 .card3 {
@@ -301,6 +303,7 @@ p {
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-size: cover;
 }
 
 .card4 {
@@ -310,6 +313,7 @@ p {
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-size: cover;
 }
 
 .card5 {
@@ -319,6 +323,7 @@ p {
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-size: cover;
 }
 
 .card6 {
@@ -327,7 +332,7 @@ p {
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
-  width: auto;
+  background-size: cover;
 }
 
 .card-info .tag {
@@ -346,17 +351,12 @@ p {
 }
 
 .about-info {
-  padding: 0 5rem;
   width: 100%;
   flex: 1;
 }
 
 .about-img {
   width: 100%;
-}
-
-.about-paragraph {
-  padding-bottom: 2rem;
 }
 
 .about-image1 {
@@ -366,8 +366,7 @@ p {
 
 .about-me {
   display: flex;
-  padding-bottom: 10rem;
-  padding-top: 5rem;
+  padding: 8rem 0 8rem 8rem;
 }
 
 hr {
@@ -378,7 +377,7 @@ hr {
 .skills-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
+  padding: 8rem;
   width: 100%;
 }
 
@@ -387,8 +386,6 @@ hr {
   line-height: 44px;
   list-style-image: url("images/rhombus.svg");
   list-style-position: inside;
-  margin: 0.7rem 1.8rem 0.7rem 0.7rem;
-
 }
 
 .headline-skills-square {
@@ -396,7 +393,6 @@ hr {
   line-height: 44px;
   list-style-image: url("images/squad.svg");
   list-style-position: inside;
-  margin: 0.7rem 1.8rem 0.7rem 0.7rem;
 }
 
 .headline-skills-circle {
@@ -404,7 +400,6 @@ hr {
   line-height: 44px;
   list-style-image: url("images/circle.svg");
   list-style-position: inside;
-  margin: 0.7rem 1.8rem 0.7rem 0.7rem;
 }
 
 .skill-list {
@@ -412,7 +407,11 @@ hr {
   color: #fff;
   font-size: 22px;
   line-height: 42.67px;
-  margin-bottom: 2rem;
+  padding-inline-start: 0;
+}
+
+.about-paragraph {
+  padding: 0;
 }
 
 .content-paragraph p {
@@ -435,15 +434,15 @@ hr {
 
 .contact-form {
   list-style: none;
-  padding-left:0 ;
-  padding-right: 24px ;
+  padding-left: 0;
 }
 
 .form-area {
   width: 100%;
 }
+
 footer {
-  background-color: #e5e5e5;
+  background-color: #fff;
   margin: 0;
 }
 
@@ -454,24 +453,28 @@ footer {
   width: auto;
 }
 
-.names, .full-name ,.email,.message {
+.names,
+.full-name,
+.email,
+.message {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: #979493;
   border: none;
   border-bottom: 1px solid #d8d8d7;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   padding: 14px 12px;
 }
-.full-name{
+
+.full-name {
   width: 100%;
   display: none;
 }
 
 .email {
   font-weight: normal;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #979493;
@@ -487,7 +490,7 @@ footer {
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
-  background-color: #f8f8f7;
+  background-color: #fbf8f7;
   width: 100%;
   min-height: 114px;
   border: none;
@@ -505,14 +508,25 @@ footer {
   padding: 0 8px;
 }
 
-.message {
- background-color: #fbfbfb;
+.icons-ft {
+  display: flex;
+  padding-inline-start: 0;
+  list-style: none;
 }
 
 .footer-line {
   border: 1px solid #d8d8d7;
   width: 100%;
   margin: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  display: none;
+}
+
+.footer-icon {
+  padding: 20px;
 }
 
 .footer-icons {
@@ -529,9 +543,10 @@ footer {
   }
 
   .headline-img {
-    width: 60%;
+    width: 70%;
     position: relative;
-    top: 160px;
+    top: 120px;
+    object-position: 7.7rem;
   }
 
   .nav-bar .name {
@@ -572,9 +587,14 @@ footer {
 
   .headline-description {
     order: 0;
-    margin: 12px 0;
-    padding-left: 3rem;
-    padding-right: 5em;
+    margin: 12px 24px;
+    padding: 60px 0 0;
+  }
+
+  .work-title {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 400;
   }
 
   h1,
@@ -602,11 +622,12 @@ footer {
     justify-content: flex-end;
     align-items: center;
     margin-top: -10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2.5rem;
   }
 
   .works-title {
     flex-direction: column;
+    padding-top: 60px;
   }
 
   .works {
@@ -619,7 +640,12 @@ footer {
 
   .principal-image {
     padding-bottom: 2rem;
-    padding-top: 4rem;
+    padding-top: 5rem;
+  }
+
+  .header-content {
+    font-size: 32px;
+    line-height: 44px;
   }
 
   .project-cards {
@@ -632,19 +658,9 @@ footer {
   }
 
   .first-card {
-    width: 327px;
     height: 386px;
-    margin: auto;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.3rem;
-  }
-
-  .first-card .button {
-    width: 100%;
-    margin: 0.7rem 0;
+    margin: 0;
   }
 
   .card-info {
@@ -652,57 +668,32 @@ footer {
   }
 
   .card2 {
-    width: 327px;
-    height: 386px;
-    margin: auto;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
     display: inherit;
+    margin: 2rem 0;
   }
 
   .card3 {
-    width: 327px;
-    height: 386px;
-    margin: auto;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem 0;
     display: inherit;
   }
 
   .card4 {
-    width: 327px;
-    height: 386px;
-    margin: auto;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem 0;
     display: inherit;
   }
 
   .card5 {
-    width: 327px;
-    height: 386px;
-    margin: auto;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem 0;
     display: inherit;
   }
 
   .card6 {
-    width: 327px;
-    height: 386px;
-    margin: auto;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem 0;
     display: inherit;
   }
 
@@ -717,18 +708,16 @@ footer {
 
   .about-me {
     flex-direction: column;
+    padding: 0;
   }
 
   .about-img {
-    width: 70%;
-    margin: auto;
-    position: sticky;
-    left: 300px;
+    object-position: 14.7rem;
   }
 
   .about-info {
     margin: auto;
-    padding: 0 2rem;
+    padding: 80px 2rem 0;
     width: auto;
   }
 
@@ -745,19 +734,28 @@ footer {
     line-height: 44px;
     text-align: center;
   }
+
   .portfolio-form {
     flex-direction: column;
-    padding: 80px 24px ;
+    padding: 80px 24px;
   }
-  .full-name{
+
+  .full-name {
     display: unset;
   }
+
   .names {
     display: none;
   }
-  .submit-button{
+
+  .submit-button {
     display: flex;
     justify-content: center;
   }
-  
+
+  .email,
+  .full-name,
+  .message {
+    padding: 0;
+  }
 }
