@@ -726,6 +726,11 @@ footer {
     text-align: center;
   }
 
+  .form-text {
+    margin-right: 0;
+    width: 100%;
+  }
+
   .portfolio-form {
     flex-direction: column;
     padding: 80px 24px;
