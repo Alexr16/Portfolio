@@ -36,14 +36,13 @@ a:hover { color: gray; }
   line-height: 20px;
   text-align: left;
   margin: 0 10px;
-  padding-left: 6rem;
+  padding-left: 10rem;
 }
 
 .list {
   flex: 1;
   list-style: none;
   display: flex;
-  margin-right: 2rem;
   padding: 0;
   color: #fff;
   font-size: 15px;
@@ -141,7 +140,7 @@ h5 {
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  padding: 8rem;
+  padding: 4rem 8rem;
 }
 
 .header-content {
@@ -152,7 +151,7 @@ h5 {
 .work-title {
   font-family: "Crete Round", serif;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 40px;
   line-height: 52px;
   color: #091e42;
   align-items: center;
@@ -178,6 +177,7 @@ p {
 .works-title {
   align-items: center;
   display: flex;
+  padding-bottom: 3rem;
 }
 
 .class-works {
@@ -461,7 +461,6 @@ footer {
 
 .full-name {
   width: 100%;
-  display: none;
 }
 
 .email {
@@ -498,6 +497,11 @@ footer {
   font-size: 40px;
   line-height: 52px;
   padding: 0 8px;
+}
+
+.form-text {
+  margin-right: 3rem;
+  width: 63%;
 }
 
 .icons-ft {
@@ -583,12 +587,6 @@ footer {
     padding: 60px 0 0;
   }
 
-  .work-title {
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: 400;
-  }
-
   h1,
   h2 {
     font-size: 56px;
@@ -620,6 +618,7 @@ footer {
   .works-title {
     flex-direction: column;
     padding-top: 60px;
+    padding-bottom: 0;
   }
 
   .works {
@@ -727,13 +726,14 @@ footer {
     text-align: center;
   }
 
+  .form-text {
+    margin-right: 0;
+    width: 100%;
+  }
+
   .portfolio-form {
     flex-direction: column;
     padding: 80px 24px;
-  }
-
-  .full-name {
-    display: unset;
   }
 
   .submit-button {
