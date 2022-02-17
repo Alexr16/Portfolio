@@ -84,10 +84,12 @@ a:hover { color: gray; }
   margin: 0 30px;
 }
 
-.icons img{
-transition: all 0.3s ease;
+.icons img {
+  transition: all 0.3s ease;
 }
-.icons img:hover, .icons img:focus {
+
+.icons img:hover,
+.icons img:focus {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -260,7 +262,9 @@ p {
   margin: auto;
   transition: all 0.3s ease-in;
 }
-.img1:hover, .img1:focus {
+
+.img1:hover,
+.img1:focus {
   width: 102%;
   height: 102%;
   cursor: pointer;
@@ -283,14 +287,80 @@ p {
   padding: 2rem 0;
   justify-content: center;
   background-size: cover;
-  transition: all 0.3s ease-in ;
+  transition: all 0.3s ease-in;
 }
 
-.first-card:hover, .first-card:focus ,.card2:hover ,.card2:focus, .card3:hover,.card3:focus,.card4:hover,.card4:focus,.card5:hover,.card5:focus, .card6:hover,.card6:focus {
+.card2 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+  background-size: cover;
+  transition: all 0.3s ease-in;
+}
+
+.card3 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+  background-size: cover;
+  transition: all 0.3s ease-in;
+}
+
+.card4 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+  background-size: cover;
+  transition: all 0.3s ease-in;
+}
+
+.card5 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  width: auto;
+  background-size: cover;
+  transition: all 0.3s ease-in;
+}
+
+.card6 {
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+  margin: 0 2rem 2rem 0;
+  background-size: cover;
+  transition: all 0.3s ease-in;
+}
+
+.first-card:hover,
+.first-card:focus,
+.card2:hover,
+.card2:focus,
+.card3:hover,
+.card3:focus,
+.card4:hover,
+.card4:focus,
+.card5:hover,
+.card5:focus,
+.card6:hover,
+.card6:focus {
   transform: scale(1.1);
   box-shadow: 5px 5px 50px #ccc;
   cursor: pointer;
 }
+
 .tags-container2 {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -305,64 +375,6 @@ p {
 
 .first-card .button {
   width: 100%;
-}
-
-.card2 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 1.5rem;
-  margin: 0 2rem 2rem 0;
-  width: auto;
-  background-size: cover;
-  transition: all 0.3s ease-in ;
-
-}
-
-.card3 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 1.5rem;
-  margin: 0 2rem 2rem 0;
-  width: auto;
-  background-size: cover;
-  transition: all 0.3s ease-in ;
-}
-
-.card4 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.svg");
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 1.5rem;
-  margin: 0 2rem 2rem 0;
-  width: auto;
-  background-size: cover;
-  transition: all 0.3s ease-in ;
-
-}
-
-.card5 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 1.5rem;
-  margin: 0 2rem 2rem 0;
-  width: auto;
-  background-size: cover;
-  transition: all 0.3s ease-in ;
-
-}
-
-.card6 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 1.5rem;
-  margin: 0 2rem 2rem 0;
-  background-size: cover;
-  transition: all 0.3s ease-in ;
-
 }
 
 .card-info .tag {
@@ -722,7 +734,7 @@ footer {
     display: block;
     width: 100%;
   }
-  
+
   .card-button {
     margin: -2rem -1.5rem;
   }
