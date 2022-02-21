@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 - IDE
 
 ### Deployment
-For deployment please rich out to the owner of this project.
+https://alexr16.github.io/Portfolio/
 ## Authors
 
 👤 **Jorge Rios**
