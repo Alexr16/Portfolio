@@ -74,9 +74,13 @@ a:hover { color: gray; }
 .headline {
   display: flex;
   flex: 1;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   align-items: center;
-  justify-content: space-around;
+  background-image: url("images/Illustration-header.svg");
+  background-repeat: no-repeat;
+  background-position-y: inherit;
+  background-position-x: 100%;
+  background-size: 500px;
 }
 
 .headline-icons {
@@ -97,7 +101,7 @@ a:hover { color: gray; }
 .headline-description {
   flex: 2;
   padding-left: 3rem;
-  height: auto;
+  max-width: 400px;
 }
 
 .headline-ilustration {
@@ -110,7 +114,7 @@ h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 81px;
-  color: #f55800;
+  color: #c64600;
 }
 
 h2 {
@@ -118,7 +122,7 @@ h2 {
   font-weight: 400;
   font-size: 72px;
   line-height: 81px;
-  color: #f55800;
+  color: #c64600;
 }
 
 h3 {
@@ -202,6 +206,9 @@ p {
 
 .principal-image {
   flex: 2;
+  background-image: url("images/project1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content {
@@ -239,7 +246,7 @@ p {
 }
 
 .button {
-  background-color: #f55800;
+  background-color: #c64600;
   color: #fff;
   padding: 12px;
   font-family: Inter, sans-serif;
@@ -252,8 +259,8 @@ p {
 
 .button:hover {
   background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+  color: #c64600;
+  border: 1px solid #c64600;
   box-sizing: border-box;
 }
 
@@ -395,6 +402,10 @@ p {
 .about-info {
   width: 100%;
   flex: 1;
+  background-image: url("./images/about.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 120%;
 }
 
 .about-img {
@@ -402,7 +413,9 @@ p {
 }
 
 .about-image1 {
-  margin: auto;
+  background-image: url("./images/about.svg");
+  background-repeat: no-repeat;
+  background-position: ;
   flex: 1;
 }
 
@@ -454,6 +467,7 @@ hr {
 
 .about-paragraph {
   padding: 0;
+  max-width: 400px;
 }
 
 .content-paragraph p {
@@ -494,7 +508,7 @@ footer {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #979493;
+  color: #727170;
   border: none;
   border-bottom: 1px solid #d8d8d7;
   font-family: Inter, sans-serif;
@@ -510,7 +524,7 @@ footer {
   font-family: Inter, sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #979493;
+  color: #727170;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
@@ -572,12 +586,16 @@ footer {
   justify-content: center;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 991px) {
   .menu {
     display: block;
     position: absolute;
     right: 10px;
     top: 15px;
+  }
+
+  .about-paragraph {
+    max-width: 325px;
   }
 
   .headline-img {
@@ -610,6 +628,11 @@ footer {
   .headline {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    background-size: 200px;
+    background-position-y: bottom;
+    background-position-x: 125%;
+    padding-bottom: 15rem;
   }
 
   .headline-icons {
@@ -672,8 +695,10 @@ footer {
   }
 
   .principal-image {
-    padding-bottom: 2rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
+    min-width: 358px;
+    min-height: 238px;
+    margin-top: 2rem;
   }
 
   .header-content {
@@ -740,7 +765,6 @@ footer {
   }
 
   .about-me {
-    flex-direction: column;
     padding: 0;
   }
 
@@ -749,9 +773,13 @@ footer {
   }
 
   .about-info {
-    margin: auto;
-    padding: 80px 2rem 0;
-    width: auto;
+    padding: 80px 0 180px 20px;
+    background-size: 200px;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position-x: 130%;
   }
 
   .skills-info {
