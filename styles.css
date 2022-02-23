@@ -415,7 +415,6 @@ p {
 .about-image1 {
   background-image: url("./images/about.svg");
   background-repeat: no-repeat;
-  background-position: ;
   flex: 1;
 }
 
