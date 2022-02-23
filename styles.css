@@ -16,7 +16,7 @@ a {
 }
 
 .nav-bar,
-a:hover { color: gray; }
+a:hover { color: #cfcfcf; }
 
 .nav-bar {
   display: flex;
@@ -262,6 +262,10 @@ p {
   color: #c64600;
   border: 1px solid #c64600;
   box-sizing: border-box;
+}
+
+.button:focus {
+  outline-color: #091e42;
 }
 
 .img1 {
