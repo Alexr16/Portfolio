@@ -58,13 +58,6 @@ a:hover { color: #cfcfcf; }
   padding: 15px 10px;
 }
 
-.line {
-  background-color: white;
-  width: 20px;
-  height: 5px;
-  margin-bottom: 3px;
-}
-
 .menu { display: none; }
 
 .icons {
@@ -595,7 +588,12 @@ footer {
     display: block;
     position: absolute;
     right: 10px;
-    top: 15px;
+  }
+
+  .menu-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 
   .about-paragraph {
