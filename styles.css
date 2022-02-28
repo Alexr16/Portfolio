@@ -591,6 +591,13 @@ footer {
     cursor: pointer;
     border: none;
     background: none;
+    transition: 0.3s;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    border: none;
+    background: none;
   }
 
   #hamburguer {
@@ -600,6 +607,8 @@ footer {
 
   .close-menu {
     display: none;
+    border: none;
+    background: none;
   }
 
   .icon {
@@ -628,15 +637,22 @@ footer {
 
   .list {
     position: fixed;
-    /* left: -100%; */
+    left: -100%;
     top: 0;
+    gap: 0;
     flex-direction: column;
     background-color: #3c3a39;
     list-style-type: none;
     width: 100vw;
     height: 100vh;
+    overflow-y: auto;
     padding-top: 12px;
     align-items: flex-start;
+    transition: 0.3s;
+  }
+
+  .show-list {
+    left: 0;
   }
 
   .nav-bar a {
