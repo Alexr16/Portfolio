@@ -652,6 +652,10 @@ footer {
   }
 
   .show-list {
+    transform: translateY(0);
+  }
+
+  .list.active {
     left: 0;
   }
 

@@ -4,7 +4,7 @@ const icons = document.querySelectorAll(".menu-icon");
 const hamburguerIcon = document.querySelector("#hamburguer")
 
 hamburguer.addEventListener("click", () => {
-    navMenu.classList.toggle("show-list");
+    navMenu.classList.toggle("active");
     icons.forEach(icon => {
         icon.classList.toggle("close-menu");
     });
@@ -14,7 +14,7 @@ document.querySelectorAll(".item").forEach(n => n.addEventListener("click", func
     icons.forEach(icon => {
         icon.classList.add("close-menu")
     })
-    hambur.classList.remove("close-menu")
-    navMenu.classList.toggle("show-list");
+    hamburguerIcon.classList.remove("close-menu")
+    navMenu.classList.toggle("active");
  }))
  
