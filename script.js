@@ -8,6 +8,7 @@ hamburguer.addEventListener('click', () => {
   icons.forEach((icon) => {
     icon.classList.toggle('close-menu');
   });
+  document.querySelector('body').classList.toggle('overflow-hidden');
 });
 
 document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', () => {
@@ -16,4 +17,5 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   });
   hamburguerIcon.classList.remove('close-menu');
   navMenu.classList.toggle('active');
+  document.querySelector('body').classList.toggle('overflow-hidden');
 }));
