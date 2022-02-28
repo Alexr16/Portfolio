@@ -9,3 +9,12 @@ hamburguer.addEventListener("click", () => {
         icon.classList.toggle("close-menu");
     });
 })
+
+document.querySelectorAll(".item").forEach(n => n.addEventListener("click", function(){
+    icons.forEach(icon => {
+        icon.classList.add("close-menu")
+    })
+    hambur.classList.remove("close-menu")
+    navMenu.classList.toggle("show-list");
+ }))
+ 
