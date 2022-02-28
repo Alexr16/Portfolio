@@ -588,9 +588,21 @@ footer {
     display: block;
     position: absolute;
     right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
   }
 
-  .menu-icon {
+  #hamburguer {
+    border: none;
+    background: none;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .icon {
     border: none;
     background: none;
     cursor: pointer;
@@ -615,16 +627,39 @@ footer {
   }
 
   .list {
-    display: none;
+    position: fixed;
+    /* left: -100%; */
+    top: 0;
+    flex-direction: column;
+    background-color: #3c3a39;
     list-style-type: none;
-    width: 100%;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
     padding-top: 12px;
+    align-items: flex-start;
+  }
+
+  .nav-bar a {
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff5e1;
+    text-align: left;
+  }
+
+  .item {
+    border-bottom: 1px solid #dfe1e6;
+    margin: 0 20px;
+    width: 90%;
+  }
+
+  .social {
+    display: none;
   }
 
   .nav-bar .item {
     display: block;
     border-top: 2px solid #3e3c3c;
+    margin: 0 1.5rem;
   }
 
   .headline {
