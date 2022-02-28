@@ -10,9 +10,9 @@ hamburguer.addEventListener('click', () => {
   });
 });
 
-document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', function () { 
+document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', function () {
   icons.forEach((icon) => {
-    icon.classList.add('close-menu'); 
+    icon.classList.add('close-menu');
   });
   hamburguerIcon.classList.remove('close-menu');
   navMenu.classList.toggle('active');
