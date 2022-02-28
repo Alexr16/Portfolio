@@ -5,13 +5,13 @@ const hamburguerIcon = document.querySelector('#hamburguer');
 
 hamburguer.addEventListener('click', () => {
   navMenu.classList.toggle('active');
-  icons.forEach(icon => {
+  icons.forEach((icon) => {
     icon.classList.toggle('close-menu');
   });
 });
 
-document.querySelectorAll('.item').forEach(n => n.addEventListener('click', function(){
-  icons.forEach(icon => {
+document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', function(){
+  icons.forEach((icon) => {
     icon.classList.add('close-menu');
   });
   hamburguerIcon.classList.remove('close-menu');
