@@ -428,8 +428,8 @@ hr {
 .skills-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 8rem;
-  width: 100%;
+  padding: 8rem 0;
+  margin-left: 8rem;
 }
 
 .headline-skills-rhombus {
