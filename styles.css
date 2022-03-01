@@ -583,6 +583,76 @@ footer {
   margin: 0;
 }
 
+/* popup window */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.blur {
+  filter: blur(0.2rem);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 200;
+  background: #fff;
+  padding: 1.5rem;
+  transition: 1s;
+}
+
+.close-popup {
+  position: fixed;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+.title-pop {
+  margin: 0;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.popup-images {
+  width: 50%;
+}
+
+.popup-container {
+  margin: 0;
+  padding: 0;
+}
+
+.popup-work {
+  display: flex;
+}
+
+.pop-paragraph {
+  color: #344563;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  padding-bottom: 4rem;
+}
+
+.cont {
+  padding: 0 1.5rem;
+}
+
+.link-popup-button {
+  padding: 0;
+}
+
 @media all and (max-width: 991px) {
   .menu {
     display: block;
