@@ -45,7 +45,7 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   document.querySelector('body').classList.toggle('overflow-hidden');
 }));
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
 	event.preventDefault();
   if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
     error.classList.remove('hidde-span');
@@ -55,7 +55,6 @@ form.addEventListener('submit', function (event) {
     error.classList.add('hidde-span');
   }
 });
-
 
 function closeModal() {
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
