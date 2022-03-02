@@ -663,8 +663,20 @@ footer {
   padding-left: 1rem;
 }
 
-.error {
+.hidde-span{
+  display: none;
+}
 
+.error {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  padding: 1em;
+  border: solid red 1px;
+  font-size: 1.5em;
+  margin: auto;
+  border-radius: 5px;
+  color: red;
+}
 }
 
 @media all and (max-width: 991px) {

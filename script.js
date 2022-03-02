@@ -52,6 +52,7 @@ form.addEventListener('submit', function (event) {
   const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const test = email.value.length === 0 || emailRegExp.test(email.value);
   if (test) {
+    error.classList.remove('hidde-span');
     error.textContent = 'The email field should be in lower case';
   } else {
     error.textContent  = '';
