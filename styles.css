@@ -591,10 +591,9 @@ footer {
   top: 0;
   left: 0;
   z-index: 100;
-}
-
-.blur {
-  filter: blur(0.2rem);
+  background: rgba(255 255 255 / 20%);
+  backdrop-filter: blur(4px);
+  overflow-y: hidden;
 }
 
 .modal {
@@ -615,6 +614,12 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.close-icon {
+  appearance: none;
+  border: none;
+  padding: 0;
+}
+
 .title-pop {
   margin: 0;
   color: #172b4d;
@@ -624,7 +629,7 @@ footer {
 }
 
 .popup-images {
-  width: 50%;
+  width: 55%;
 }
 
 .popup-container {
@@ -646,11 +651,16 @@ footer {
 }
 
 .cont {
-  padding: 0 1.5rem;
+  margin-left: 2rem;
 }
 
 .link-popup-button {
   padding: 0;
+  display: flex;
+}
+
+.icon-popup-button {
+  padding-left: 1rem;
 }
 
 @media all and (max-width: 991px) {
@@ -726,6 +736,10 @@ footer {
     overflow-y: hidden;
   }
 
+  .overflow-hidden-popup {
+    overflow-y: hidden;
+  }
+
   .list.active {
     left: 0;
   }
@@ -759,7 +773,7 @@ footer {
     align-items: flex-start;
     background-size: 200px;
     background-position-y: bottom;
-    background-position-x: 125%;
+    background-position-x: 140%;
     padding-bottom: 15rem;
   }
 
@@ -915,6 +929,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 5rem 0;
     text-align: center;
+    margin: 0;
   }
 
   .form-text p {
@@ -944,5 +959,52 @@ footer {
   .full-name,
   .message {
     padding: 0;
+  }
+
+  .backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 4%;
+    transform: translate(0, 0);
+    width: 80%;
+    z-index: 200;
+    background: #fff;
+    padding: 1.5rem;
+    transition: 1s;
+    margin-top: 2rem;
+    height: 80%;
+    overflow-y: scroll;
+  }
+
+  .popup-work {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-images {
+    width: 90%;
+  }
+
+  .popup-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cont {
+    padding: 0;
+    margin: 0;
+  }
+
+  .pop-paragraph {
+    padding: 2rem 0;
   }
 }

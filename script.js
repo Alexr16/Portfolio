@@ -14,7 +14,7 @@ const firstwork = {
   image: 'images/projects.svg'
 }
 const worksPopup = {
-  title:  'Multi-Post Stories',
+  title:  'Keeping track of hundreds  of components website',
   technologies: ['html', 'Bootstrap', 'Ruby'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   liveButton: 'https://',
@@ -93,7 +93,7 @@ var ulTagsContainer = document.createElement('ul')
 ulTagsContainer.classList.add('tags-container');
 tagcontainer.appendChild(ulTagsContainer);
 
-for(let j=0; j<4; j++) {
+for (let j = 0; j < 4; j += 1) {
   var tagListFirst = document.createElement('li');
   tagListFirst.classList.add('tag');
   tagListFirst.textContent = firstwork.technologies[j];
@@ -110,7 +110,8 @@ content.appendChild(buttonFirstProject);
 var projectCards = document.createElement('div');
 projectCards.classList.add('project-cards');
 cardWorks.appendChild(projectCards);
-for (let i=0; i<6; i++){
+
+for (let i = 0; i < 6; i += 1) {
   var cardsWork = document.createElement('div');
   cardsWork.className = worksPopup.cards[i];
   projectCards.appendChild(cardsWork);
@@ -119,7 +120,7 @@ for (let i=0; i<6; i++){
   cardImage.className = worksPopup.imageCard[i];
   cardImage.src = worksImages[i];
 
-  if(i !== 0){
+  if (i !== 0) {
     var cardContent = document.createElement('div');
     cardContent.classList.add('card-content');
     cardsWork.appendChild(cardContent);
@@ -141,7 +142,7 @@ for (let i=0; i<6; i++){
     tagsCard.classList.add('tags-container2');
     cardInfo.appendChild(tagsCard);
 
-    for(let j=0; j<3; j++) {
+    for (let j = 0; j < 3; j += 1) {
       var tagList = document.createElement('li');
       tagList.classList.add('tag');
       tagList.textContent = worksPopup.technologies[j];
@@ -164,13 +165,18 @@ for (let i=0; i<6; i++){
       backdrop = document.createElement('section');
       backdrop.classList.add('backdrop');
       document.body.insertBefore(backdrop, demoContainer);
-            // backdrop.classList.toggle('blur');
       popupWindow(worksImages[i], workTitle[i]);
-      backdrop.addEventListener('click', closeModal);
     });
 
+    cardContent.addEventListener('click', () => {
+      backdrop = document.createElement('section');
+      backdrop.classList.add('backdrop');
+      document.body.insertBefore(backdrop, demoContainer);
+      popupWindow(worksImages[i], workTitle[i]);
+    });
   }
-  if(i === 0){
+
+  if (i === 0) {
     var seeProjectFirst = document.createElement('div');
     seeProjectFirst.classList.add('card-content-first');
     cardsWork.appendChild(seeProjectFirst);
@@ -185,19 +191,16 @@ for (let i=0; i<6; i++){
       backdrop = document.createElement('section');
       backdrop.classList.add('backdrop');
       document.body.insertBefore(backdrop, demoContainer);
-        // backdrop.classList.toggle('blur');
       popupWindow(worksImages[i], workTitle[i]);
-      backdrop.addEventListener('click', closeModal);
     });
   }
-
 }
 
-function popupWindow(image, workTitle){
+function popupWindow(image, workTitle) {
   modal = document.createElement('div');
   modal.classList.add('modal');
   modal.innerHTML = `
-          <button class="close-menu" type="button"><img class="close-popup" src="images/X.svg" alt="Close Popup"></button>
+          <button class="close-icon close-popup" type="button"><img class="close-popup" src="images/X.svg" alt="Close Popup"></button>
           <div class="popup-title">
               <h2 class="title-pop">${workTitle}</h2>
           </div>
@@ -215,36 +218,32 @@ function popupWindow(image, workTitle){
                       <p class="pop-paragraph">${worksPopup.description}</p>
                   </div>
                   <div class="popup-buttons">
-                      <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.sourceButton}">See this project</a></button>
-                      <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.liveButton}">See live</a></button>
+                      <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.liveButton}" aria-label="Live view project">See live <img class="icon-popup-button" src="images/icon-see-live.svg" alt="live icon"></a></button>
+                      <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.sourceButton}" aria-label="Jorge's github account">See Source<img class="icon-popup-button" src="images/icon-source.svg" alt="sourceicon"></a></button>
                   </div>
               </div>
           </div>
   `;
   backdrop.appendChild(modal);
   var closePopup = document.querySelector('.close-popup');
-  closePopup.addEventListener('click', () => {
-    modal.remove();
-  });
+  closePopup.addEventListener('click', closeModal);
+  document.querySelector('body').classList.toggle('overflow-hidden-popup');
 }
 
 function closeModal () {
-  if(backdrop){
+  document.querySelector('body').classList.toggle('overflow-hidden-popup');
+  if (backdrop) {
   backdrop.remove();
-  // // backdrop.classList.toggle('blur');
   }
 
-  if(modal){
+  if (modal) {
     modal.remove();
-  // //document.querySelector('body').classList.toggle('blur');
   }
 };
-
 
 buttonFirstProject.addEventListener('click', () => {
   backdrop = document.createElement('section');
   backdrop.classList.add('backdrop');
   document.body.insertBefore(backdrop, demoContainer);
   popupWindow(firstwork.image, worksPopup.title);
-  backdrop.addEventListener('click', closeModal);
 });
