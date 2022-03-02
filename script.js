@@ -177,7 +177,7 @@ for (let i = 0; i < 6; i += 1) {
     cardParagraph.classList.add('content-paragrap');
     cardParagraph.textContent = 'A  daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard';
     cardContent.appendChild(cardParagraph);
-  
+
     const cardInfo = document.createElement('div');
     cardInfo.classList.add('card-info');
     cardsWork.appendChild(cardInfo);
