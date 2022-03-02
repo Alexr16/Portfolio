@@ -541,6 +541,7 @@ footer {
 
 .form-btn {
   margin-top: 1rem;
+  width: fit-content;
 }
 
 .form-text p {
@@ -663,20 +664,17 @@ footer {
   padding-left: 1rem;
 }
 
-.hidde-span{
+.hidde-span {
   display: none;
 }
 
 .error {
-  font-family: "Inter", serif;
-  font-weight: 400;
   padding: 1em;
   border: solid red 1px;
-  font-size: 1.5em;
-  margin: auto;
   border-radius: 5px;
   color: red;
-}
+  width: fit-content;
+  margin-top: 1rem;
 }
 
 @media all and (max-width: 991px) {
@@ -969,6 +967,7 @@ footer {
   .submit-button {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .email,

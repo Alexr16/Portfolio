@@ -46,16 +46,13 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
 }));
 
 form.addEventListener('submit', function (event) {
-	// stop form submission
 	event.preventDefault();
-	// validate the form
-  const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  const test = email.value.length === 0 || emailRegExp.test(email.value);
-  if (test) {
+  if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
     error.classList.remove('hidde-span');
     error.textContent = 'The email field should be in lower case';
   } else {
     error.textContent  = '';
+    error.classList.add('hidde-span');
   }
 });
 
