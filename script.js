@@ -4,24 +4,25 @@ const icons = document.querySelectorAll('.menu-icon');
 const hamburguerIcon = document.querySelector('#hamburguer');
 const demoContainer = document.querySelector('.about-me');
 const startBody = document.querySelector('.about-me');
-var backdrop;
-var modal;
-const worksImages = ['images/project2.svg',  'images/project3.svg',  'images/project4.svg','images/project5.svg', 'images/project3.svg', 'images/project4.svg'];
-const workTitle = ['Portfolio', 'Data Dashboard Healthcare', 'Website Protfolio', 'Profesional Art Printing Data More', 'Data Dashboard Healthcare','Website Protfolio'];
+const backdrop = document.createElement('section');
+const modal = document.createElement('div');
+const worksImages = ['images/project2.svg', 'images/project3.svg', 'images/project4.svg', 'images/project5.svg', 'images/project3.svg', 'images/project4.svg'];
+const workTitle = ['Portfolio', 'Data Dashboard Healthcare', 'Website Protfolio', 'Profesional Art Printing Data More', 'Data Dashboard Healthcare', 'Website Protfolio'];
 const firstwork = {
   technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: 'images/projects.svg'
+  image: 'images/projects.svg',
 }
+
 const worksPopup = {
-  title:  'Keeping track of hundreds  of components website',
+  title: 'Keeping track of hundreds of components website',
   technologies: ['html', 'Bootstrap', 'Ruby'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   liveButton: 'https://',
-  sourceButton:  'https://',
+  sourceButton: 'https://',
   cards: ['first-card', 'card2', 'card3', 'card4', 'card5', 'card6'],
-  imageCard: ["card1", "card2", "card3", "card4", "card5", "card6"],
-  image: 'images/project1.svg'
+  imageCard: ['card1', 'card2', 'card3', 'card4', 'card5', 'card6'],
+  image: 'images/project1.svg',
 };
 
 hamburguer.addEventListener('click', () => {
@@ -41,163 +42,7 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   document.querySelector('body').classList.toggle('overflow-hidden');
 }));
 
-var sectionWorks = document.createElement('section');
-sectionWorks.classList.add('works');
-sectionWorks.id = 'works-link';
-document.body.insertBefore(sectionWorks, startBody);
-
-var worksGeneralTitle = document.createElement('div');
-worksGeneralTitle.classList.add('works-title');
-sectionWorks.appendChild(worksGeneralTitle);
-
-var generalTitle = document.createElement('h3');
-generalTitle.classList.add('work-title');
-generalTitle.textContent = 'My Recent Works';
-worksGeneralTitle.appendChild(generalTitle);
-
-var lineTitle = document.createElement('hr');
-lineTitle.classList.add('work-line-title');
-worksGeneralTitle.appendChild(lineTitle);
-
-var cardWorks = document.createElement('div');
-cardWorks.classList.add('card-works');
-sectionWorks.append(cardWorks);
-
-var initialSection = document.createElement('div');
-initialSection.classList.add('initial-section');
-cardWorks.appendChild(initialSection);
-
-var principalImage = document.createElement('div');
-principalImage.classList.add('principal-image');
-initialSection.appendChild(principalImage);
-
-var content = document.createElement('div');
-content.classList.add('content');
-initialSection.appendChild(content);
-
-var headerContent = document.createElement('h3');
-headerContent.classList.add('header-content');
-headerContent.textContent = 'Multi-Post Stories';
-content.appendChild(headerContent);
-
-var contentParagraph = document.createElement('p');
-contentParagraph.classList.add('content-paragraph');
-contentParagraph.textContent = firstwork.description;
-content.appendChild(contentParagraph);
-
-var tagcontainer = document.createElement('div');
-tagcontainer.classList.add('tag-container');
-content.appendChild(tagcontainer);
-
-var ulTagsContainer = document.createElement('ul')
-ulTagsContainer.classList.add('tags-container');
-tagcontainer.appendChild(ulTagsContainer);
-
-for (let j = 0; j < 4; j += 1) {
-  var tagListFirst = document.createElement('li');
-  tagListFirst.classList.add('tag');
-  tagListFirst.textContent = firstwork.technologies[j];
-  ulTagsContainer.appendChild(tagListFirst);
-};
-
-var buttonFirstProject = document.createElement('button');
-buttonFirstProject.classList.add('button');
-buttonFirstProject.classList.add('button-projects');
-buttonFirstProject.setAttribute('type', 'button');
-buttonFirstProject.textContent = 'See Project';
-content.appendChild(buttonFirstProject);
-
-var projectCards = document.createElement('div');
-projectCards.classList.add('project-cards');
-cardWorks.appendChild(projectCards);
-
-for (let i = 0; i < 6; i += 1) {
-  var cardsWork = document.createElement('div');
-  cardsWork.className = worksPopup.cards[i];
-  projectCards.appendChild(cardsWork);
-
-  var cardImage = document.createElement('img');
-  cardImage.className = worksPopup.imageCard[i];
-  cardImage.src = worksImages[i];
-
-  if (i !== 0) {
-    var cardContent = document.createElement('div');
-    cardContent.classList.add('card-content');
-    cardsWork.appendChild(cardContent);
-
-    var cardTitle = document.createElement('h5');
-    cardTitle.textContent = workTitle[i];
-    cardContent.appendChild(cardTitle);
-
-    var cardParagraph = document.createElement('p');
-    cardParagraph.classList.add('content-paragrap');
-    cardParagraph.textContent = 'A  daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard';
-    cardContent.appendChild(cardParagraph);
-    
-    var cardInfo = document.createElement('div');
-    cardInfo.classList.add('card-info');
-    cardsWork.appendChild(cardInfo);
-
-    var tagsCard = document.createElement('ul')
-    tagsCard.classList.add('tags-container2');
-    cardInfo.appendChild(tagsCard);
-
-    for (let j = 0; j < 3; j += 1) {
-      var tagList = document.createElement('li');
-      tagList.classList.add('tag');
-      tagList.textContent = worksPopup.technologies[j];
-      tagsCard.appendChild(tagList);
-    };
-
-    var seeProject = document.createElement('div');
-    seeProject.classList.add('card-button');
-    cardsWork.appendChild(seeProject);
-
-    var seeProjectButton = document.createElement('button');
-    seeProjectButton.classList.add('button');
-    seeProjectButton.classList.add('button-display');
-    seeProjectButton.classList.add('button-projects');
-    seeProjectButton.setAttribute('type', 'button');
-    seeProjectButton.textContent = 'See Project';
-    seeProject.appendChild(seeProjectButton);
-
-    seeProjectButton.addEventListener('click', () => {
-      backdrop = document.createElement('section');
-      backdrop.classList.add('backdrop');
-      document.body.insertBefore(backdrop, demoContainer);
-      popupWindow(worksImages[i], workTitle[i]);
-    });
-
-    cardContent.addEventListener('click', () => {
-      backdrop = document.createElement('section');
-      backdrop.classList.add('backdrop');
-      document.body.insertBefore(backdrop, demoContainer);
-      popupWindow(worksImages[i], workTitle[i]);
-    });
-  }
-
-  if (i === 0) {
-    var seeProjectFirst = document.createElement('div');
-    seeProjectFirst.classList.add('card-content-first');
-    cardsWork.appendChild(seeProjectFirst);
-
-    var buttonFirstCard = document.createElement('button');
-    buttonFirstCard.classList.add('button');
-    buttonFirstCard.classList.add('button-first-card');
-    buttonFirstCard.setAttribute('type', 'button');
-    buttonFirstCard.textContent = 'See Project';
-    seeProjectFirst.appendChild(buttonFirstCard);
-    buttonFirstCard.addEventListener('click', () => {
-      backdrop = document.createElement('section');
-      backdrop.classList.add('backdrop');
-      document.body.insertBefore(backdrop, demoContainer);
-      popupWindow(worksImages[i], workTitle[i]);
-    });
-  }
-}
-
 function popupWindow(image, workTitle) {
-  modal = document.createElement('div');
   modal.classList.add('modal');
   modal.innerHTML = `
           <button class="close-icon close-popup" type="button"><img class="close-popup" src="images/X.svg" alt="Close Popup"></button>
@@ -225,7 +70,7 @@ function popupWindow(image, workTitle) {
           </div>
   `;
   backdrop.appendChild(modal);
-  var closePopup = document.querySelector('.close-popup');
+  const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', closeModal);
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
 }
@@ -241,8 +86,159 @@ function closeModal () {
   }
 };
 
+const sectionWorks = document.createElement('section');
+sectionWorks.classList.add('works');
+sectionWorks.id = 'works-link';
+document.body.insertBefore(sectionWorks, startBody);
+
+const worksGeneralTitle = document.createElement('div');
+worksGeneralTitle.classList.add('works-title');
+sectionWorks.appendChild(worksGeneralTitle);
+
+const generalTitle = document.createElement('h3');
+generalTitle.classList.add('work-title');
+generalTitle.textContent = 'My Recent Works';
+worksGeneralTitle.appendChild(generalTitle);
+
+const lineTitle = document.createElement('hr');
+lineTitle.classList.add('work-line-title');
+worksGeneralTitle.appendChild(lineTitle);
+
+const cardWorks = document.createElement('div');
+cardWorks.classList.add('card-works');
+sectionWorks.append(cardWorks);
+
+const initialSection = document.createElement('div');
+initialSection.classList.add('initial-section');
+cardWorks.appendChild(initialSection);
+
+const principalImage = document.createElement('div');
+principalImage.classList.add('principal-image');
+initialSection.appendChild(principalImage);
+
+const content = document.createElement('div');
+content.classList.add('content');
+initialSection.appendChild(content);
+
+const headerContent = document.createElement('h3');
+headerContent.classList.add('header-content');
+headerContent.textContent = 'Multi-Post Stories';
+content.appendChild(headerContent);
+
+const contentParagraph = document.createElement('p');
+contentParagraph.classList.add('content-paragraph');
+contentParagraph.textContent = firstwork.description;
+content.appendChild(contentParagraph);
+
+const tagcontainer = document.createElement('div');
+tagcontainer.classList.add('tag-container');
+content.appendChild(tagcontainer);
+
+const ulTagsContainer = document.createElement('ul')
+ulTagsContainer.classList.add('tags-container');
+tagcontainer.appendChild(ulTagsContainer);
+
+for (let j = 0; j < 4; j += 1) {
+  const tagListFirst = document.createElement('li');
+  tagListFirst.classList.add('tag');
+  tagListFirst.textContent = firstwork.technologies[j];
+  ulTagsContainer.appendChild(tagListFirst);
+};
+
+const buttonFirstProject = document.createElement('button');
+buttonFirstProject.classList.add('button');
+buttonFirstProject.classList.add('button-projects');
+buttonFirstProject.setAttribute('type', 'button');
+buttonFirstProject.textContent = 'See Project';
+content.appendChild(buttonFirstProject);
+
+const projectCards = document.createElement('div');
+projectCards.classList.add('project-cards');
+cardWorks.appendChild(projectCards);
+
+for (let i = 0; i < 6; i += 1) {
+  const cardsWork = document.createElement('div');
+  cardsWork.className = worksPopup.cards[i];
+  projectCards.appendChild(cardsWork);
+
+  const cardImage = document.createElement('img');
+  cardImage.className = worksPopup.imageCard[i];
+  cardImage.src = worksImages[i];
+
+  if (i !== 0) {
+    const cardContent = document.createElement('div');
+    cardContent.classList.add('card-content');
+    cardsWork.appendChild(cardContent);
+
+    const cardTitle = document.createElement('h5');
+    cardTitle.textContent = workTitle[i];
+    cardContent.appendChild(cardTitle);
+
+    const cardParagraph = document.createElement('p');
+    cardParagraph.classList.add('content-paragrap');
+    cardParagraph.textContent = 'A  daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard';
+    cardContent.appendChild(cardParagraph);
+    
+    const cardInfo = document.createElement('div');
+    cardInfo.classList.add('card-info');
+    cardsWork.appendChild(cardInfo);
+
+    const tagsCard = document.createElement('ul');
+    tagsCard.classList.add('tags-container2');
+    cardInfo.appendChild(tagsCard);
+
+    for (let j = 0; j < 3; j += 1) {
+      const tagList = document.createElement('li');
+      tagList.classList.add('tag');
+      tagList.textContent = worksPopup.technologies[j];
+      tagsCard.appendChild(tagList);
+    };
+
+    const seeProject = document.createElement('div');
+    seeProject.classList.add('card-button');
+    cardsWork.appendChild(seeProject);
+
+    const seeProjectButton = document.createElement('button');
+    seeProjectButton.classList.add('button');
+    seeProjectButton.classList.add('button-display');
+    seeProjectButton.classList.add('button-projects');
+    seeProjectButton.setAttribute('type', 'button');
+    seeProjectButton.textContent = 'See Project';
+    seeProject.appendChild(seeProjectButton);
+
+    seeProjectButton.addEventListener('click', () => {
+      backdrop.classList.add('backdrop');
+      document.body.insertBefore(backdrop, demoContainer);
+      popupWindow(worksImages[i], workTitle[i]);
+    });
+
+    cardContent.addEventListener('click', () => {
+      backdrop.classList.add('backdrop');
+      document.body.insertBefore(backdrop, demoContainer);
+      popupWindow(worksImages[i], workTitle[i]);
+    });
+  }
+
+  if (i === 0) {
+    const seeProjectFirst = document.createElement('div');
+    seeProjectFirst.classList.add('card-content-first');
+    cardsWork.appendChild(seeProjectFirst);
+
+    const buttonFirstCard = document.createElement('button');
+    buttonFirstCard.classList.add('button');
+    buttonFirstCard.classList.add('button-first-card');
+    buttonFirstCard.setAttribute('type', 'button');
+    buttonFirstCard.textContent = 'See Project';
+    seeProjectFirst.appendChild(buttonFirstCard);
+    buttonFirstCard.addEventListener('click', () => {
+      backdrop.classList.add('backdrop');
+      document.body.insertBefore(backdrop, demoContainer);
+      popupWindow(worksImages[i], workTitle[i]);
+    });
+  }
+}
+
 buttonFirstProject.addEventListener('click', () => {
-  backdrop = document.createElement('section');
   backdrop.classList.add('backdrop');
   document.body.insertBefore(backdrop, demoContainer);
   popupWindow(firstwork.image, worksPopup.title);
