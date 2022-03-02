@@ -12,7 +12,7 @@ const firstwork = {
   technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   image: 'images/projects.svg',
-}
+};
 
 const worksPopup = {
   title: 'Keeping track of hundreds of components website',
@@ -41,6 +41,16 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   navMenu.classList.toggle('active');
   document.querySelector('body').classList.toggle('overflow-hidden');
 }));
+
+function closeModal () {
+  document.querySelector('body').classList.toggle('overflow-hidden-popup');
+  if (backdrop) {
+    backdrop.remove();
+  }
+  if (modal) {
+    modal.remove();
+  }
+};
 
 function popupWindow(image, workTitle) {
   modal.classList.add('modal');
@@ -73,17 +83,6 @@ function popupWindow(image, workTitle) {
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', closeModal);
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
-}
-
-function closeModal () {
-  document.querySelector('body').classList.toggle('overflow-hidden-popup');
-  if (backdrop) {
-  backdrop.remove();
-  }
-
-  if (modal) {
-    modal.remove();
-  }
 };
 
 const sectionWorks = document.createElement('section');
@@ -217,7 +216,7 @@ for (let i = 0; i < 6; i += 1) {
       document.body.insertBefore(backdrop, demoContainer);
       popupWindow(worksImages[i], workTitle[i]);
     });
-  }
+  };
 
   if (i === 0) {
     const seeProjectFirst = document.createElement('div');
@@ -235,8 +234,8 @@ for (let i = 0; i < 6; i += 1) {
       document.body.insertBefore(backdrop, demoContainer);
       popupWindow(worksImages[i], workTitle[i]);
     });
-  }
-}
+  };
+};
 
 buttonFirstProject.addEventListener('click', () => {
   backdrop.classList.add('backdrop');
