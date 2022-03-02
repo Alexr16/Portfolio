@@ -73,7 +73,7 @@ function popupWindow(image, workTitle) {
                       <p class="pop-paragraph">${worksPopup.description}</p>
                   </div>
                   <div class="popup-buttons">
-                      <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.liveButton}" aria-label="Live view project">See live <img class="icon-popup-button" src="images/icon-see-live.svg" alt="live icon"></a></button>
+                      <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.liveButton}" aria-label="Live view project">See live <img class="icon-popup-button" src="images/Icon-see-live.svg" alt="live icon"></a></button>
                       <button class="button button-projects" type="button"><a class="link-popup-button" href="${worksPopup.sourceButton}" aria-label="Jorge's github account">See Source<img class="icon-popup-button" src="images/icon-source.svg" alt="sourceicon"></a></button>
                   </div>
               </div>
