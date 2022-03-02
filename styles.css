@@ -663,6 +663,10 @@ footer {
   padding-left: 1rem;
 }
 
+.error {
+
+}
+
 @media all and (max-width: 991px) {
   .menu {
     display: block;
@@ -1006,5 +1010,9 @@ footer {
 
   .pop-paragraph {
     padding: 2rem 0;
+  }
+
+  .error {
+  
   }
 }
