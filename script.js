@@ -42,7 +42,7 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   document.querySelector('body').classList.toggle('overflow-hidden');
 }));
 
-function closeModal () {
+function closeModal() {
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
   if (backdrop) {
     backdrop.remove();
@@ -50,7 +50,7 @@ function closeModal () {
   if (modal) {
     modal.remove();
   }
-};
+}
 
 function popupWindow(image, workTitle) {
   modal.classList.add('modal');
@@ -83,7 +83,7 @@ function popupWindow(image, workTitle) {
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', closeModal);
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
-};
+}
 
 const sectionWorks = document.createElement('section');
 sectionWorks.classList.add('works');
@@ -133,7 +133,7 @@ const tagcontainer = document.createElement('div');
 tagcontainer.classList.add('tag-container');
 content.appendChild(tagcontainer);
 
-const ulTagsContainer = document.createElement('ul')
+const ulTagsContainer = document.createElement('ul');
 ulTagsContainer.classList.add('tags-container');
 tagcontainer.appendChild(ulTagsContainer);
 
@@ -142,7 +142,7 @@ for (let j = 0; j < 4; j += 1) {
   tagListFirst.classList.add('tag');
   tagListFirst.textContent = firstwork.technologies[j];
   ulTagsContainer.appendChild(tagListFirst);
-};
+}
 
 const buttonFirstProject = document.createElement('button');
 buttonFirstProject.classList.add('button');
@@ -177,7 +177,7 @@ for (let i = 0; i < 6; i += 1) {
     cardParagraph.classList.add('content-paragrap');
     cardParagraph.textContent = 'A  daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard';
     cardContent.appendChild(cardParagraph);
-    
+  
     const cardInfo = document.createElement('div');
     cardInfo.classList.add('card-info');
     cardsWork.appendChild(cardInfo);
@@ -191,7 +191,7 @@ for (let i = 0; i < 6; i += 1) {
       tagList.classList.add('tag');
       tagList.textContent = worksPopup.technologies[j];
       tagsCard.appendChild(tagList);
-    };
+    }
 
     const seeProject = document.createElement('div');
     seeProject.classList.add('card-button');
@@ -216,7 +216,7 @@ for (let i = 0; i < 6; i += 1) {
       document.body.insertBefore(backdrop, demoContainer);
       popupWindow(worksImages[i], workTitle[i]);
     });
-  };
+  }
 
   if (i === 0) {
     const seeProjectFirst = document.createElement('div');
@@ -234,8 +234,8 @@ for (let i = 0; i < 6; i += 1) {
       document.body.insertBefore(backdrop, demoContainer);
       popupWindow(worksImages[i], workTitle[i]);
     });
-  };
-};
+  }
+}
 
 buttonFirstProject.addEventListener('click', () => {
   backdrop.classList.add('backdrop');
