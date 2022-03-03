@@ -64,8 +64,8 @@ function saveData(user) {
   const messageForm = document.getElementById('message').value;
   userData = {
     'full-name': fullNameForm,
-    'email': emailForm,
-    'message': messageForm,
+    email: emailForm,
+    message: messageForm,
   };
   localStorage.setItem('user', JSON.stringify(user));
 }
@@ -77,7 +77,7 @@ form.addEventListener('change', () => {
 window.addEventListener('load', () => {
   const storage = JSON.parse(localStorage.getItem('user'));
   console.log(storage);
-  if(storage){
+  if (storage) {
     Object.entries(storage).forEach((inputForm) =>  {
       const [key, value] = inputForm;
       document.getElementById(key).value = value;
