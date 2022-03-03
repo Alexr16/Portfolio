@@ -541,6 +541,7 @@ footer {
 
 .form-btn {
   margin-top: 1rem;
+  width: fit-content;
 }
 
 .form-text p {
@@ -661,6 +662,19 @@ footer {
 
 .icon-popup-button {
   padding-left: 1rem;
+}
+
+.hidde-span {
+  display: none;
+}
+
+.error {
+  padding: 1em;
+  border: solid red 1px;
+  border-radius: 5px;
+  color: red;
+  width: fit-content;
+  margin-top: 1rem;
 }
 
 @media all and (max-width: 991px) {
@@ -953,6 +967,7 @@ footer {
   .submit-button {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .email,

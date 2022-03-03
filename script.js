@@ -6,6 +6,9 @@ const demoContainer = document.querySelector('.about-me');
 const startBody = document.querySelector('.about-me');
 const backdrop = document.createElement('section');
 const modal = document.createElement('div');
+const form = document.querySelector('#form');
+const email = document.querySelector('.email');
+const error = document.querySelector('.error');
 const worksImages = ['images/project2.svg', 'images/project3.svg', 'images/project4.svg', 'images/project5.svg', 'images/project3.svg', 'images/project4.svg'];
 const workTitle = ['Portfolio', 'Data Dashboard Healthcare', 'Website Protfolio', 'Profesional Art Printing Data More', 'Data Dashboard Healthcare', 'Website Protfolio'];
 const firstwork = {
@@ -41,6 +44,17 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   navMenu.classList.toggle('active');
   document.querySelector('body').classList.toggle('overflow-hidden');
 }));
+
+form.addEventListener('submit', (event) => {
+  if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    error.classList.remove('hidde-span');
+    error.textContent = 'The email field should be in lower case';
+  } else {
+    error.textContent = '';
+    error.classList.add('hidde-span');
+  }
+});
 
 function closeModal() {
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
