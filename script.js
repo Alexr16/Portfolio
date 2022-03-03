@@ -46,8 +46,9 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
 }));
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
+  
   if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
     error.classList.remove('hidde-span');
     error.textContent = 'The email field should be in lower case';
   } else {
