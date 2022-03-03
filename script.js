@@ -59,15 +59,15 @@ form.addEventListener('submit', (event) => {
 
 let userData = {};
 function saveData(user) {
-  let fullNameForm = document.getElementById('full-name').value;
-  let emailForm = document.getElementById('email').value;
-  let messageForm = document.getElementById('message').value;
+  const fullNameForm = document.getElementById('full-name').value;
+  const emailForm = document.getElementById('email').value;
+  const messageForm = document.getElementById('message').value;
   userData = {
-    "full-name": fullNameForm,
-    "email": emailForm,
-    "message": messageForm,
+    'full-name': fullNameForm,
+    'email': emailForm,
+    'message': messageForm,
   };
-  localStorage.setItem('user', JSON.stringify(userData));
+  localStorage.setItem('user', JSON.stringify(user));
 }
 
 form.addEventListener('change', () => {
