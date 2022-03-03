@@ -57,7 +57,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-let userData = {};
+const userData = {};
 function saveData(userData) {
   const fullNameForm = document.getElementById('full-name').value;
   const emailForm = document.getElementById('email').value;
@@ -66,14 +66,14 @@ function saveData(userData) {
     'full-name': fullNameForm,
     email: emailForm,
     message: messageForm,
-  }
+  };
   localStorage.setItem('user', JSON.stringify(userData));
-  let dataRecord = new Array();
-  dataRecord = JSON.parse(localStorage.getItem('dataUser'))?JSON.parse(localStorage.getItem('dataUser')):[];
+  let dataRecord = [];
+  dataRecord = JSON.parse(localStorage.getItem('dataUser'));
   dataRecord.push({
-    'fullName': fullNameForm,
-    'email': emailForm,
-    'message': messageForm,
+    fullName: fullNameForm,
+    email: emailForm,
+    message: messageForm,
   });
   localStorage.setItem('dataUser', JSON.stringify(dataRecord));
 }
