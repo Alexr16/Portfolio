@@ -105,21 +105,22 @@
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         </div>
         <div class="form-area">
-            <form id="form" action="https://formspree.io/f/mbjwyyze" method="POST">
+            <!-- action="https://formspree.io/f/mbjwyyze" method="POST" -->
+            <form id="form" >
                 <ul class="contact-form">
                     <li class="full-name-input">
                         <input class="full-name" id="full-name" type="text" name="name" maxlength="30" placeholder="Full name"
                             required>
                     </li>
                     <li>
-                        <input class="email" type="email" name="Email address" placeholder="Email address" required>
+                        <input class="email" id="email" type="email" name="Email address" placeholder="Email address" required>
                     </li>
                     <li>
-                        <textarea class="message" name="Enter text here" maxlength="500" placeholder="Enter text here"
+                        <textarea class="message" id="message" name="Enter text here" maxlength="500" placeholder="Enter text here"
                             required></textarea>
                     </li>
                     <li class="submit-button">
-                        <button class="button form-btn" type="submit">Get in touch</button>
+                        <button class="button form-btn" type="submit" onclick="saveData()">Get in touch</button>
                         <span class="error hidde-span"></span>
                     </li>
                 </ul>

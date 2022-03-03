@@ -54,7 +54,28 @@ form.addEventListener('submit', (event) => {
     error.textContent = '';
     error.classList.add('hidde-span');
   }
+  localStorage.clear();
 });
+
+let userData = {};
+function saveData(user) {
+  let fullNameForm = document.getElementById('full-name').value;
+  let emailForm = document.getElementById('email').value;
+  let messageForm = document.getElementById('message').value;
+  userData = {
+    "full-name": fullNameForm,
+    "email": emailForm,
+    "message": messageForm,
+  };
+  localStorage.setItem('user', JSON.stringify(userData));
+}
+
+form.addEventListener('change', () => {
+  saveData(userData);
+});
+
+
+
 
 function closeModal() {
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
