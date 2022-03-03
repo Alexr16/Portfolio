@@ -78,7 +78,7 @@ window.addEventListener('load', () => {
   const storage = JSON.parse(localStorage.getItem('user'));
   console.log(storage);
   if (storage) {
-    Object.entries(storage).forEach((inputForm) =>  {
+    Object.entries(storage).forEach((inputForm) => {
       const [key, value] = inputForm;
       document.getElementById(key).value = value;
       document.getElementById(key).value = value;
