@@ -46,7 +46,6 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
 }));
 
 form.addEventListener('submit', (event) => {
-  
   if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
     event.preventDefault();
     error.classList.remove('hidde-span');
