@@ -53,12 +53,12 @@ form.addEventListener('submit', (event) => {
   } else {
     error.textContent = '';
     error.classList.add('hidde-span');
+    localStorage.clear();
   }
-  localStorage.clear();
 });
 
 let userData = {};
-function saveData(user) {
+function saveData(userData) {
   const fullNameForm = document.getElementById('full-name').value;
   const emailForm = document.getElementById('email').value;
   const messageForm = document.getElementById('message').value;
@@ -66,8 +66,16 @@ function saveData(user) {
     'full-name': fullNameForm,
     email: emailForm,
     message: messageForm,
-  };
-  localStorage.setItem('user', JSON.stringify(user));
+  }
+  localStorage.setItem('user', JSON.stringify(userData));
+  let dataRecord = new Array();
+  dataRecord = JSON.parse(localStorage.getItem('dataUser'))?JSON.parse(localStorage.getItem('dataUser')):[];
+  dataRecord.push({
+    'fullName': fullNameForm,
+    'email': emailForm,
+    'message': messageForm,
+  });
+  localStorage.setItem('dataUser', JSON.stringify(dataRecord));
 }
 
 form.addEventListener('change', () => {
@@ -76,11 +84,9 @@ form.addEventListener('change', () => {
 
 window.addEventListener('load', () => {
   const storage = JSON.parse(localStorage.getItem('user'));
-  console.log(storage);
   if (storage) {
     Object.entries(storage).forEach((inputForm) => {
       const [key, value] = inputForm;
-      document.getElementById(key).value = value;
       document.getElementById(key).value = value;
     });
   }
