@@ -76,6 +76,7 @@ form.addEventListener('change', () => {
 
 
 
+
 function closeModal() {
   document.querySelector('body').classList.toggle('overflow-hidden-popup');
   if (backdrop) {
