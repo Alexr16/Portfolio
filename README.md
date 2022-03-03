@@ -27,6 +27,12 @@ https://alexr16.github.io/Portfolio/
 - Twitter: [@ReveloJ](https://twitter.com/ReveloJ)
 - LinkedIn: [Jorge Ríos](https://www.linkedin.com/in/jorge-r%C3%ADos-3b33ab22b)
 
+## Collaborator(s)
+
+👤 **Aaron Keegan**
+
+Github: @AKeeganDev
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
