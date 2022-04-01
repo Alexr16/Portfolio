@@ -1,6 +1,6 @@
 # Portfolio
 
-> This is a portfolio personal project.
+> In this project, I recreated a full web page with mobile and desktop versions of a Portfolio project using HTML, CSS, and JavaScript.
 
 ## Built With
 
