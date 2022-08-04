@@ -283,7 +283,7 @@ p {
 
 .first-card {
   border: 2px solid #091e42;
-  background-image: url("images/project2.svg");
+  background-image: url("images/projects.png");
   margin: 0 2rem 2rem 0;
   display: flex;
   align-items: flex-end;
@@ -295,7 +295,7 @@ p {
 }
 
 .card2 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.jpg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
@@ -306,7 +306,7 @@ p {
 }
 
 .card3 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.png");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
@@ -317,7 +317,7 @@ p {
 }
 
 .card4 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.png");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
@@ -328,7 +328,7 @@ p {
 }
 
 .card5 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project6.png");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
@@ -339,7 +339,7 @@ p {
 }
 
 .card6 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.svg");
+  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project7.jpg");
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
@@ -630,7 +630,10 @@ footer {
 }
 
 .popup-images {
-  width: 55%;
+  /* width: 55%;
+  height: fit-content; */
+  width: 700px;
+  height: 700px;
 }
 
 .popup-container {
@@ -1006,7 +1009,8 @@ footer {
   }
 
   .popup-images {
-    width: 90%;
+    width: 300px;
+    height: auto;
   }
 
   .popup-buttons {
