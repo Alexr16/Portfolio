@@ -262,15 +262,15 @@ for (let i = 0; i < 6; i += 1) {
     seeProjectButton.addEventListener('click', () => {
       backdrop.classList.add('backdrop');
       document.body.insertBefore(backdrop, demoContainer);
-      popupWindow(worksImages[i], workTitle[i], worksPopup.technologies[i], worksPopup.description[i],
-        worksPopup.liveButton[i], worksPopup.sourceButton[i]);
+      popupWindow(worksImages[i], workTitle[i], worksPopup.technologies[i],
+        worksPopup.description[i], worksPopup.liveButton[i], worksPopup.sourceButton[i]);
     });
 
     cardContent.addEventListener('click', () => {
       backdrop.classList.add('backdrop');
       document.body.insertBefore(backdrop, demoContainer);
-      popupWindow(worksImages[i], workTitle[i], worksPopup.technologies[i], worksPopup.description[i],
-        worksPopup.liveButton[i], worksPopup.sourceButton[i]);
+      popupWindow(worksImages[i], workTitle[i], worksPopup.technologies[i],
+        worksPopup.description[i], worksPopup.liveButton[i], worksPopup.sourceButton[i]);
     });
   }
 
@@ -288,8 +288,8 @@ for (let i = 0; i < 6; i += 1) {
     buttonFirstCard.addEventListener('click', () => {
       backdrop.classList.add('backdrop');
       document.body.insertBefore(backdrop, demoContainer);
-      popupWindow(worksImages[i], workTitle[i], worksPopup.technologies[i], worksPopup.description[i],
-        worksPopup.liveButton[i], worksPopup.sourceButton[i]);
+      popupWindow(worksImages[i], workTitle[i], worksPopup.technologies[i],
+        worksPopup.description[i], worksPopup.liveButton[i], worksPopup.sourceButton[i]);
     });
   }
 }
@@ -297,6 +297,6 @@ for (let i = 0; i < 6; i += 1) {
 buttonFirstProject.addEventListener('click', () => {
   backdrop.classList.add('backdrop');
   document.body.insertBefore(backdrop, demoContainer);
-  popupWindow(firstwork.image, firstwork.title, firstwork.technologies, firstwork.description,
-    firstwork.liveButton, worksPopup.sourceButton);
+  popupWindow(firstwork.image, firstwork.title, firstwork.technologies,
+    firstwork.description, firstwork.liveButton, worksPopup.sourceButton);
 });
