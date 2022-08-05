@@ -694,6 +694,10 @@ footer {
   height: auto;
 }
 
+.resume-link {
+  padding: 0;
+}
+
 @media all and (max-width: 991px) {
   .menu {
     display: block;
