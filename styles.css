@@ -139,6 +139,7 @@ h5 {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+  margin-block-end: 0;
 }
 
 .works {
@@ -295,53 +296,58 @@ p {
 }
 
 .card2 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.jpg");
+  /* background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project3.jpg"); */
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-color: #000;
   background-size: cover;
   transition: all 0.3s ease-in;
 }
 
 .card3 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.png");
+  /* background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project4.png"); */
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-color: #000;
   background-size: cover;
   transition: all 0.3s ease-in;
 }
 
 .card4 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.png");
+  /* background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project5.png"); */
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-color: #000;
   background-size: cover;
   transition: all 0.3s ease-in;
 }
 
 .card5 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project6.png");
+  /* background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project6.png"); */
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   width: auto;
+  background-color: #000;
   background-size: cover;
   transition: all 0.3s ease-in;
 }
 
 .card6 {
-  background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project7.jpg");
+  /* background-image: linear-gradient(179.35deg, rgba(38 38 38 / 0%) 0.85%, rgba(38 38 38 / 0.9%) 85%), url("images/project7.jpg"); */
   display: flex;
   flex-wrap: wrap;
+  background-color: #000;
   padding: 2rem 1.5rem;
   margin: 0 2rem 2rem 0;
   background-size: cover;
@@ -592,8 +598,10 @@ footer {
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(255 255 255 / 20%);
-  backdrop-filter: blur(4px);
+
+  /* background: rgba(255 255 255 / 20%); */
+  background: rgba(105 105 105 / 90%);
+  backdrop-filter: blur(7px);
   overflow-y: hidden;
 }
 
@@ -607,6 +615,7 @@ footer {
   background: #fff;
   padding: 1.5rem;
   transition: 1s;
+  border: 3px solid black;
 }
 
 .close-popup {
@@ -632,8 +641,8 @@ footer {
 .popup-images {
   /* width: 55%;
   height: fit-content; */
-  width: 450px;
-  height: 300px;
+  width: 650px;
+  height: auto;
 }
 
 .popup-container {
@@ -680,6 +689,11 @@ footer {
   margin-top: 1rem;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+}
+
 @media all and (max-width: 991px) {
   .menu {
     display: block;
@@ -689,6 +703,23 @@ footer {
     border: none;
     background: none;
     transition: 0.3s;
+  }
+
+  .first-card:hover,
+  .first-card:focus,
+  .card2:hover,
+  .card2:focus,
+  .card3:hover,
+  .card3:focus,
+  .card4:hover,
+  .card4:focus,
+  .card5:hover,
+  .card5:focus,
+  .card6:hover,
+  .card6:focus {
+    transform: none;
+    box-shadow: 5px 5px 50px #ccc;
+    cursor: pointer;
   }
 
   .menu-icon {
@@ -991,7 +1022,7 @@ footer {
   .modal {
     position: fixed;
     top: 0;
-    left: 4%;
+    left: 3%;
     transform: translate(0, 0);
     width: 80%;
     z-index: 200;
