@@ -709,23 +709,6 @@ footer {
     transition: 0.3s;
   }
 
-  .first-card:hover,
-  .first-card:focus,
-  .card2:hover,
-  .card2:focus,
-  .card3:hover,
-  .card3:focus,
-  .card4:hover,
-  .card4:focus,
-  .card5:hover,
-  .card5:focus,
-  .card6:hover,
-  .card6:focus {
-    transform: none;
-    box-shadow: 5px 5px 50px #ccc;
-    cursor: pointer;
-  }
-
   .menu-icon {
     cursor: pointer;
     border: none;
@@ -1060,5 +1043,22 @@ footer {
 
   .pop-paragraph {
     padding: 2rem 0;
+  }
+
+  .first-card:hover,
+  .first-card:focus,
+  .card2:hover,
+  .card2:focus,
+  .card3:hover,
+  .card3:focus,
+  .card4:hover,
+  .card4:focus,
+  .card5:hover,
+  .card5:focus,
+  .card6:hover,
+  .card6:focus {
+    transform: none;
+    box-shadow: 5px 5px 50px #ccc;
+    cursor: pointer;
   }
 }
