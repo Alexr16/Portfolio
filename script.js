@@ -223,6 +223,11 @@ for (let i = 0; i < 6; i += 1) {
     cardContent.classList.add('card-content');
     cardsWork.appendChild(cardContent);
 
+    const cardImage = document.createElement('img');
+    cardImage.classList.add('img');
+    cardImage.src = worksImages[i];
+    cardContent.appendChild(cardImage);
+
     const cardTitle = document.createElement('h5');
     cardTitle.textContent = workTitle[i];
     cardContent.appendChild(cardTitle);
