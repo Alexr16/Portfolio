@@ -12,12 +12,13 @@ const error = document.querySelector('.error');
 const worksImages = ['images/projects.png', 'images/project3.jpg', 'images/project4.png', 'images/project5.png', 'images/project6.png', 'images/project7.jpg'];
 const workTitle = ['Conference Page', 'Pokemon App', 'Book Store', 'Metrics WebApp', 'Recipe App', 'Budget App'];
 const firstwork = {
-  title: 'Conference Page',
-  technologies: ['CSS', 'html', 'JavaScript', 'Ruby'],
-  description: 'In this project, I build a web page with desktop and mobile versions for a conference using HTML, CSS, and JavaScript.',
-  image: 'images/projects.svg',
-  liveButton: 'https://alexr16.github.io/Conference-page/',
-  sourceButton: 'https://github.com/Alexr16/Conference-page',
+  title: 'Hotel Agent App',
+  technologies: ['SCSS', 'React', 'Ruby on Rails', 'Ruby'],
+  shortdes: 'In this project, I build an App to book a hotel build with React, Ruby and rails with desktop and mobile versions.',
+  description: 'An app in which you can reserve a hotel. Sign up and sign in to access the app. Add and Remove the hotel that you want to stay in. Reserve how many rooms days you need. Get cost information for the reservation process, see the list of available hotels',
+  image: 'images/hotelaget.png',
+  liveButton: 'https://musical-caramel-97a830.netlify.app',
+  sourceButton: 'https://github.com/Alexr16/hotel-agent-front-end',
 };
 
 const worksPopup = {
@@ -175,12 +176,12 @@ initialSection.appendChild(content);
 
 const headerContent = document.createElement('h3');
 headerContent.classList.add('header-content');
-headerContent.textContent = 'Multi-Post Stories';
+headerContent.textContent = 'Hotel Agent App';
 content.appendChild(headerContent);
 
 const contentParagraph = document.createElement('p');
 contentParagraph.classList.add('content-paragraph');
-contentParagraph.textContent = firstwork.description;
+contentParagraph.textContent = firstwork.shortdes;
 content.appendChild(contentParagraph);
 
 const tagcontainer = document.createElement('div');
@@ -303,5 +304,5 @@ buttonFirstProject.addEventListener('click', () => {
   backdrop.classList.add('backdrop');
   document.body.insertBefore(backdrop, demoContainer);
   popupWindow(firstwork.image, firstwork.title, firstwork.technologies,
-    firstwork.description, firstwork.liveButton, worksPopup.sourceButton);
+    firstwork.description, firstwork.liveButton, firstwork.sourceButton);
 });
